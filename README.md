@@ -159,7 +159,7 @@ To build this library you should have [CMake](https://cmake.org) installed and c
 
 *CMake version 2.30.3*, was specifically used to compile this library.
 
-**Note: Download the [catch2](https://github.com/catchorg/Catch2) library from github and put inside the folder `Catch2-2.13.6` in the `HashLibPlus.Tests` directory, before running `cmake` command. I emptied the folder because of project size.** 
+**Note: Download the [catch2](https://github.com/catchorg/Catch2) library from github and put inside the folder `Catch2-2.13.6` in the `HashLibPlus.Tests` directory, before running `cmake` command. I emptied the folder because of project size. But you can download the full release [here](https://github.com/ron4fun/HashLibPlus/releases/tag/v1.0)** 
 
 ```
 > cmake --version
