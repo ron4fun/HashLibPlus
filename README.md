@@ -147,7 +147,7 @@ int main()
 
     bool check = result == result_2; // True
 
-	return 0;
+    return 0;
 }
 ```
 
