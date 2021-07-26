@@ -162,14 +162,14 @@ To build this library you should have [CMake](https://cmake.org) installed and c
 **Note: Download the [catch2](https://github.com/catchorg/Catch2) library from github and put inside the folder `Catch2-2.13.6` in the `HashLibPlus.Tests` directory, before running `cmake` command. I emptied the folder because of project size.** 
 
 ```
-	> cmake --version
+> cmake --version
 ```
 
 This command displays your cmake current version.
 
 
 ```
-	> cmake -S {src_dir} -B {build_dir}
+> cmake -S {src_dir} -B {build_dir}
 ```
 
 This command is to build the library for compilation, where *{src_dir}* is the path to the project main directory. And *{build_src}* is the directory path where the project built files are stored.
