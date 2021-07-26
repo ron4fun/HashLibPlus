@@ -155,7 +155,7 @@ How to build library
 ----------------------------------------
 ### CMake
 ----------------------------------------
-To build this library you should have [CMake](https://cmake.org) installed and configured on your local machine to work with *C++* compiler such as **gcc**, **g++** and **clang**. If you already have visual studio installed on your local machine, cmake kind of automatically links with the compiler and therefore builds a visual studio project of the library for you. Goodluck! ;)
+To build this library you should have [CMake](https://cmake.org) installed and configured on your local machine to work with any *C++* compiler such as **gcc**, **g++** and **clang**. If you already have visual studio installed on your local machine, cmake kind of automatically links with the compiler and therefore builds a visual studio project of the library for you. Goodluck! ;)
 
 *CMake version 2.30.3*, was specifically used to compile this library.
 
