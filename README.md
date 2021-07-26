@@ -165,7 +165,7 @@ To build this library you should have [CMake](https://cmake.org) installed and c
 > cmake --version
 ```
 
-This command displays your cmake current version.
+This command displays your current cmake version.
 
 
 ```
@@ -177,9 +177,9 @@ This command is to build the library for compilation, where *{src_dir}* is the p
 
 How to run test
 ----------------------------------------
-[catch2](https://github.com/catchorg/Catch2) library is the test framework used for this library because of its flexible nature.
+[catch2](https://github.com/catchorg/Catch2) is the test framework used in this project because of its flexible nature.
 
-To run the unitests which are stored in the *HashLibPlus.Tests* directory. Once the project is built with *cmake*, you can always compile the code which outputs two executables.
+To run the unitests which are stored in the *HashLibPlus.Tests* directory, once the project is built with *cmake*, you can always compile the code which outputs two executables.
 
 ### HashLibPlus.exe
 ----------------------------------------
