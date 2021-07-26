@@ -187,7 +187,7 @@ This executable displays a benchmark test analysis of the compiled code speed wi
 
 * HashLibPlus.Test.exe
 ----------------------------------------
-This executable hooks into [catch2](https://github.com/catchorg/Catch2) process to allow for detail test output result, and other command line options that *catch2* supports for those that wish to pass values to *catch2* interface.
+This executable hooks into [catch2](https://github.com/catchorg/Catch2) process to allow for detailed test results, and other command line options that *catch2* supports for those that wish to pass values to *catch2* interface.
 
 More on this library
 ----------------------------------------
