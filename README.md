@@ -181,11 +181,11 @@ How to run test
 
 To run the unitests which are stored in the *HashLibPlus.Tests* directory, once the project is built with *cmake*, you can always compile the code which outputs two executables.
 
-### HashLibPlus.exe
+* HashLibPlus.exe
 ----------------------------------------
-This displays a benchmark test analysis of the compiled code speed with regards to your C.P.U capability. 
+This executable displays a benchmark test analysis of the compiled code speed with regards to your C.P.U capability. 
 
-### HashLibPlus.Test.exe
+* HashLibPlus.Test.exe
 ----------------------------------------
 This executable hooks into [catch2](https://github.com/catchorg/Catch2) process to allow for detail test output result, and other command line options that *catch2* supports for those that wish to pass values to *catch2* interface.
 
