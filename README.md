@@ -31,11 +31,11 @@ Available Algorithms
 
 ###### 64 bit hashes
 
-* `FNV64` `FNV1a64` `Murmur2_64` `SipHash2_4` `XXHash64` :heavy_check_mark:
+* `FNV64` `FNV1a64` `Murmur2_64` `SipHash64_2_4` `XXHash64` :heavy_check_mark:
 
 ###### 128 bit hashes
 
-* `MurmurHash3_x86_128` `MurmurHash3_x64_128` :heavy_check_mark:
+* `MurmurHash3_x86_128` `MurmurHash3_x64_128` `SipHash128_2_4` :heavy_check_mark:
 
 ##### Cryptographic Hash Functions 
 ----------------------------------------
