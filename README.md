@@ -192,6 +192,7 @@ Note: The `.` used as the source directory indicates the current directory where
 This command is to build a `Visual Studio` project files of the library, where *{src_dir}* is the parent directory. And *{build_src}* is the build directory depending on "x86" or "x64".
 
 **Download the project full release [here](https://github.com/ron4fun/HashLibPlus/releases/tag/v1.0)**
+
 How to run test
 ----------------------------------------
 [catch2](https://github.com/catchorg/Catch2) is the test framework used in this project because of its flexible nature.
