@@ -24,8 +24,8 @@ target_include_directories(HashLibPlus
 		${CMAKE_CURRENT_SOURCE_DIR}/Utils
 )
 
-add_library(HashLibPlus.lib STATIC ${SRC_FILES})
-target_include_directories(HashLibPlus.lib 
+add_library(hashplus STATIC ${SRC_FILES})
+target_include_directories(hashplus 
 	PUBLIC 
 		${CMAKE_CURRENT_SOURCE_DIR}/Base
 		${CMAKE_CURRENT_SOURCE_DIR}/Checksum
@@ -58,4 +58,4 @@ target_include_directories(HashLibPlus.Tests
 		${CMAKE_CURRENT_SOURCE_DIR}/HashLibPlus.Tests/NullDigest
 )
 add_subdirectory ( HashLibPlus.Tests/Catch2-2.13.6 )
-target_link_libraries(HashLibPlus.Tests PUBLIC HashLibPlus.lib)
+target_link_libraries(HashLibPlus.Tests PUBLIC hashplus)
