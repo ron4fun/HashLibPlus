@@ -155,31 +155,50 @@ How to build library
 ----------------------------------------
 ### CMake
 ----------------------------------------
-To build this library you should have [CMake](https://cmake.org) installed and configured on your local machine to work with any *C++* compiler such as **gcc**, **g++** and **clang**. If you already have visual studio installed on your local machine, cmake kind of automatically links with the compiler and therefore builds a visual studio project of the library for you. Goodluck! ;)
+To build this library you should have [CMake](https://cmake.org) installed and configured on your local machine to work with any *C++* compiler such as **gcc**, **g++** and **clang**. If you already have visual studio installed on your local machine, cmake kind of automatically links with the compiler and therefore builds a visual studio project of the library for you. `Visual Studio 2019` was used to build and compile this project. Goodluck! ;)
 
 *CMake version 2.30.3*, was specifically used to compile this library.
 
-**Note: Download the [catch2](https://github.com/catchorg/Catch2) library from github and put inside the folder `Catch2-2.13.6` in the `HashLibPlus.Tests` directory, before running `cmake` command. I emptied the folder because of project size. But you can download the full release [here](https://github.com/ron4fun/HashLibPlus/releases/tag/v1.0)** 
+**Note: [catch2](https://github.com/catchorg/Catch2) library was used as the test framework in the `HashLibPlus.Tests` project.** 
+
+Follow the steps below to build for x86 (32-bit) Release mode.
 
 ```
-> cmake --version
+> cmake -G "Visual Studio 16 2019" -A Win32 -S {src_dir} -B {build_dir}
 ```
 
-This command displays your current cmake version.
+**Example:** `cmake -G "Visual Studio 16 2019" -A Win32 -S . -B x86`
 
+Note: The `.` used as the source directory indicates the current directory where the cmd interface is pointed to.
 
 ```
-> cmake -S {src_dir} -B {build_dir}
+> cmake --build {src_dir} --config Release
 ```
 
-This command is to build the library for compilation, where *{src_dir}* is the path to the project main directory. And *{build_src}* is the directory path where the project built files are stored.
+Follow the steps below to build for x64 (64-bit) Release mode.
 
+```
+> cmake -G "Visual Studio 16 2019" -A x64 -S {src_dir} -B {build_dir}
+```
 
+**Example:** `cmake -G "Visual Studio 16 2019" -A x64 -S . -B x64`
+
+Note: The `.` used as the source directory indicates the current directory where the cmd interface is pointed to.
+
+```
+> cmake --build {src_dir} --config Release
+```
+
+This command is to build a `Visual Studio` project files of the library, where *{src_dir}* is the parent directory. And *{build_src}* is the build directory depending on "x86" or "x64".
+
+**Download the project full release [here](https://github.com/ron4fun/HashLibPlus/releases/tag/v1.0)**
 How to run test
 ----------------------------------------
 [catch2](https://github.com/catchorg/Catch2) is the test framework used in this project because of its flexible nature.
 
-To run the unitests which are stored in the *HashLibPlus.Tests* directory, once the project is built with *cmake*, you can always compile the code which outputs two executables.
+To run the unitests in *HashLibPlus.Tests* project, locate `HashLibPlus.Test.exe` in the Release folder of the built project.
+
+**The built project outputs two executables and a `hashplus.lib` for linking with the `Base/HashFactory.h` main header file.**
 
 * HashLibPlus.exe
 ----------------------------------------
