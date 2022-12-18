@@ -185,3 +185,21 @@ const HashLibByteArray::const_iterator last = MainData.end();
 
 const HashLibByteArray ChunkOne = HashLibByteArray(start, mid);
 const HashLibByteArray ChunkTwo = HashLibByteArray(mid, last);
+
+// Check if empty.txt exist else create
+int checkEmptyFileExist()
+{
+	const char* filename = "EmptyFile.txt";
+
+	ifstream file(filename);
+	if (!file)
+	{
+		// create file
+		file.open(filename, fstream::app); 
+		file.close();
+		return 0;
+	}
+	else return 1;
+}
+
+int EmptyFileExist = checkEmptyFileExist();
