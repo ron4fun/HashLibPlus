@@ -218,6 +218,7 @@ Depending on how experienced you are with *CMake* or *catch2*, you are always fr
 
 If you want implementations in other languages, you can check out these
 
+* [SharpHash](https://github.com/ron4fun/SharpHash) by Mbadiwe Nnaemeka Ronald
 * [HashLib4Pascal](https://github.com/Xor-el/HashLib4Pascal) by Ugochukwu Mmaduekwe
 
 ### Tip Jar
