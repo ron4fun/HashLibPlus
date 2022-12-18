@@ -134,22 +134,27 @@ Available Algorithms
 
 int main() 
 {
-    // Chaining mode
-    string result = HashFactory::Crypto::CreateMD5()
-    			->ComputeString("Hello C#")->ToString();
-
-    // Incremental mode
     IHash hash = HashFactory::Crypto::CreateMD5();
-    hash->Initialize();
-    hash->TransformString("Hello");
-    hash->TransformString(" C#");
-    string result_2 = hash->TransformFinal()->ToString();
+		
+    IHash clone = hash->Clone();
 
-    bool check = result == result_2; // True
+    IHMAC hmac = HashFactory::HMAC::CreateHMAC(hash);
+    hmac->SetKey(Converters::ConvertStringToBytes("password"));
 
+    IHashResult Result1 = hash->ComputeString("Hash");
+    IHashResult Result2 = hmac->ComputeString("Hash");
+	
+    bool check = Result1->CompareTo(Result2);
+    
     return 0;
 }
 ```
+
+
+Full Visual Studio project without CMake
+----------------------------------------
+Please consider using this version [HashLibPlus-Reload](https://github.com/ron4fun/HashLibPlus-Reload) instead.
+
 
 How to build library
 ----------------------------------------
